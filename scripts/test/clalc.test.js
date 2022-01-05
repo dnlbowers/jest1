@@ -21,9 +21,11 @@ describe("Calculator", () => {
         });
 
         //not sure why I could not get working
-        // test("no parameters should return an error", () => {
-        //     expect(addition()).toThrow();
-        // });
+        test("no parameters should return an error", () => {
+            expect(() => {
+                addition();
+            }).toThrow(Error)
+        });
     });
 
     describe("Subtraction function", () => {
