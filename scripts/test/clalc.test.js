@@ -20,7 +20,6 @@ describe("Calculator", () => {
             expect(addition(42, 31)).toBe(73);
         });
 
-        //not sure why I could not get working
         test("no parameters should return an error", () => {
             expect(() => {
                 addition();
